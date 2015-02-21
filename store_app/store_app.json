@@ -1,0 +1,9 @@
+{
+    "name" : "AppStore",
+    "database": {
+    	"username" : "root",
+    	"password": "root",
+    	"host" : "localhost",
+    	"dbname" : "store"
+    }
+}
