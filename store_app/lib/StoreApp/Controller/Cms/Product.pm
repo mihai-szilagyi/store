@@ -7,7 +7,7 @@ sub home {
     my $model = $self->app->model;
     $model->resultset('Customer')->all();
 
-    $self->render(msg => 'Welcome to our pretty catalog!');
+    $self->render(msg => 'Welcome to Cms!');
 }
 
 1;

@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="small-3 columns">
+    <label for="right-label" class="right inline"><%= $name %></label>
+  </div>
+  <div class="small-9 columns">
+    % if (my $type = stash 'type') {
+      % if($type eq "select"){
+      <select>
+        % if(my $options = stash 'options'){
+          %foreach my $option (@$options) {
+            % my ($input_name, $value) = each %{$option};
+            <option value="<%= $input_name %>"><%= $value %></option>
+          %}
+        %}
+      </select>
+      %}elsif($type eq "radio"){
+        % if(my $options = stash 'options'){
+          %foreach my $option (@$options) {
+            <input type="radio" name="<%= $name %>" value="<%= $option %>">
+          %}
+        %}
+      %} else {
+
+      %}
+    % }else { 
+    <input type="text" id="right-label" placeholder="<%= $placeholder %>">
+    %}
+  </div>
+</div>
