@@ -1,5 +1,7 @@
 % my $placeholder = stash 'placeholder';
 % my $value = stash 'value';
+% my $id  = stash 'id';
+
 <div class="row">
 % if(my $label = stash 'label') {
   <div class="small-3 columns">
@@ -9,7 +11,12 @@
   <div class="small-9 columns">
     % if (my $type = stash 'type') {
       % if($type eq "select"){
-      <select name="<%= $name %>">
+      <select name="<%= $name %>" id="<%= $id ? $id : $name%>"
+        %if(my $class = stash 'class'){
+        class="<% foreach (@$class){%><%= $_ %> <%}%>"
+        %}
+
+      >
         % if(my $options = stash 'options'){
           %foreach my $option (@$options) {
             % my ($input_name, $input_value) = each %{$option};

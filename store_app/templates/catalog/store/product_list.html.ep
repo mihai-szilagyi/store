@@ -5,17 +5,19 @@
       <th>Descriere</th>
       <th width="150">Pret</th>
       <th width="150">Stoc</th>
+      <th width="150">Firma</th>
       <th width="150">Date Created</th>
     </tr>
   </thead>
   <tbody>
   % foreach (@$products){
     <tr>
-      <td><a href="/store/view?id=<%= $_->{id} %>"><%= $_->{name} %></a></td>
-      <td><%= $_->{description} %></td>
-      <td><%= $_->{price} %></td>
-      <td><%= $_->{stock} %></td>
-      <td><%= $_->{created_date} %></td>
+      <td><a href="/store/view?id=<%= $_->id() %>"><%= $_->name() %></a></td>
+      <td><%= $_->description() %></td>
+      <td><%= $_->price() %></td>
+      <td><%= $_->stock() %></td>
+      <td><%= $_->manufacturer ? $_->manufacturer->name : '' %></td>
+      <td><%= $_->created_date() %></td>
     </tr>
     %}
   </tbody>

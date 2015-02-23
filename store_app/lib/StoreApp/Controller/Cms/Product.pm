@@ -9,6 +9,21 @@ sub home {
     $self->render(msg => 'Welcome to Cms!');
 }
 
+sub edit {
+	my $self = shift;
+	my $model = $self->app->model;
+	my $manufacturers  =$model->resultset('Manufacturer')->search({}, {
+		columns => [qw/id name/],
+ 		});
+	
+	my @manufacturers = ();
+	while(my $item = $manufacturers->next){
+        push @manufacturers, { $item->id => $item->name };
+	}
+	
+	$self->render(manufacturers => \@manufacturers );
+}
+
 =head2 save
 insert new product into the database
 =cut
@@ -20,7 +35,9 @@ sub save {
 		description => $self->param('description'),
 		price => $self->param('price'),
 		stock => $self->param('stock'),
-		created_date => DateTime->now()
+		created_date => DateTime->now(),
+		material => $self->param('material'),
+		manufacturer => $self->param('manufacturer')
 		});
 
 	my $upload = $self->req->upload('upload');

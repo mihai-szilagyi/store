@@ -9,9 +9,14 @@ sub products {
 
 sub product_list {
 	my $self = shift;
+
+	my $order_by = $self->param('order_by') // "created_date";
+	my $order_type = $self->param('order_type') // "asc";
+
 	my $model = $self->app->model;
 	my @products  =$model->resultset('Product')->search({}, {
-   		result_class => 'DBIx::Class::ResultClass::HashRefInflator',
+		order_by => { -$order_type => $order_by },
+   		# result_class => 'DBIx::Class::ResultClass::HashRefInflator',
  		})->all;
 	
 	$self->render(products => \@products );

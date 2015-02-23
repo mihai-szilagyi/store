@@ -57,10 +57,12 @@ sub startup {
     # Normal route to controller
     $r->get('/')->to('catalog-home#home');
     $r->get('/store')->to('catalog-store#products');
+    $r->post('/store/product_list')->to('catalog-store#product_list');
     $r->get('/store/view')->to('catalog-store#view');
 
     my $cms = $self->routes->under('/cms');
     $cms->get("/product")->to('cms-product#home');
+    $cms->get("/product/new")->to('cms-product#edit');
     $cms->post("/product/save")->to('cms-product#save');
 
 }

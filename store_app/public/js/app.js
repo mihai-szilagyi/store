@@ -11,4 +11,14 @@ function readURL(input) {
 
             reader.readAsDataURL(input.files[0]);
         }
-    }
+}
+
+$(document).ready(function(){
+    $('.sort').on('change', function(){        
+        $.post("/store/product_list",{order_by : $("#order_by").val(),
+                                      order_type : $("#order_type").val()},
+                                function(data){
+                                    $("#catalog").html(data);
+                                });
+    });
+});

@@ -1,4 +1,25 @@
 % layout 'default';
 % title 'Welcome';
 <h2>Available products</h2>
+<%= include "components/input" , ( name => "order_by",
+                                    label => "ordonez dupa",
+                                    type => "select",
+                                        options => [
+                                          { "price" => "pret"},
+                                          { "created_date" => "data"},
+                                          ] ),
+									class => ['sort']
+%>
+<%= include "components/input" , ( name => "order_type",
+                                    type => "select",
+                                        options => [
+                                          { "asc" => "asc"},
+                                          { "desc" => "desc"},
+                                          ] ),
+									class => ['sort']
+
+                                        
+      %>
+<div id="catalog">
 <%= include "catalog/store/product_list" %>
+</div>

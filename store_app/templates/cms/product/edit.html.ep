@@ -1,0 +1,74 @@
+% layout 'default';
+% title 'Welcome';
+<h2>Product management</h2>
+
+<div>
+  <form enctype="multipart/form-data" method="post" action="/cms/product/save">
+    <div class="row">
+      <div class="small-8 columns">
+      <!-- product name  -->
+       <%= include "components/input" , ( name => "name",
+                                        label => "name",
+                                        placeholder => "nume produs",
+                                        )
+      %>
+      <div class="row">
+      <div class="small-3 columns">
+        <label for="right-label" class="right inline">photo</label>
+      </div>
+        <div class="small-9 columns">
+          <input type='file' onchange="readURL(this);" name="upload">
+          <img id="prod_image" src="http://placehold.it/500x150" alt="your image" />
+      </div>
+      </div>
+      <%= include "components/textarea" , ( name => "description",
+                                        label => "descriere",
+                                        placeholder => "descriere produs",
+                                        )
+      %>
+      <%= include "components/input" , ( name => "price",
+                                        label => "pret",
+                                        placeholder => "pret",
+                                        )
+      %>
+      <%= include "components/input" , ( name => "stock",
+                                        label => "stoc",
+                                        placeholder => "stoc",
+                                        )
+      %>
+      <%= include "components/input" , ( name => "material",
+                                         label => "material",
+                                        type => "select",
+                                        options => [
+                                            { "piele" => "piele" },
+                                            { "imitatie" => "imitatie" }
+                                          ] )
+      %>
+      <%= include "components/input" , ( name => "manufacturer",
+                                         label => "producator",
+                                        type => "select",
+                                        options => $manufacturers )
+      %>
+      <%= include "components/input" , ( name => "color",
+                                         label => "culoare",
+                                        type => "select",
+                                        options => [
+                                          { "rosu" => "rosu"},
+                                          { "alb" => "alb"},
+                                          { "gri" => "gri"}
+                                          ] )
+                                        
+      %>
+      </div>
+      <div class="row">
+    <div class="small-8 columns">
+      <div class="row">
+        <div class="small-9 columns">
+          <input type="submit" id="right-label">
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </form>
+</div>
