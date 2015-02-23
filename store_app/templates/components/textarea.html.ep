@@ -1,0 +1,11 @@
+% my $placeholder = stash 'placeholder';
+<div class="row">
+% if(my $label = stash 'label') {
+  <div class="small-3 columns">
+    <label for="right-label" class="right inline"><%= $label %></label>
+  </div>
+% }
+  <div class="small-9 columns">
+  <textarea name="<%= $name %>" placeholder="<%= $placeholder ? $placeholder : $name %>"></textarea>
+  </div>
+</div>

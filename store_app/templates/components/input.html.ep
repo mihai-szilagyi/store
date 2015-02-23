@@ -1,11 +1,14 @@
+% my $placeholder = stash 'placeholder';
 <div class="row">
+% if(my $label = stash 'label') {
   <div class="small-3 columns">
-    <label for="right-label" class="right inline"><%= $name %></label>
+    <label for="right-label" class="right inline"><%= $label %></label>
   </div>
+% }
   <div class="small-9 columns">
     % if (my $type = stash 'type') {
       % if($type eq "select"){
-      <select>
+      <select name="<%= $name %>">
         % if(my $options = stash 'options'){
           %foreach my $option (@$options) {
             % my ($input_name, $value) = each %{$option};
@@ -16,14 +19,24 @@
       %}elsif($type eq "radio"){
         % if(my $options = stash 'options'){
           %foreach my $option (@$options) {
-            <input type="radio" name="<%= $name %>" value="<%= $option %>">
+            % my ($input_name, $value) = each %{$option};
+            <input type="radio" name="<%= $name %>" value="<%= $value %>" id="<%= $input_name %>">
+              <label for="<%= $input_name %>" ><%= $input_name %></label>
+          %}
+        %}
+        %}elsif($type eq "checkbox"){
+        % if(my $options = stash 'options'){
+          %foreach my $option (@$options) {
+            % my ($input_name, $value) = each %{$option};
+            <input type="checkbox" name="<%= $name %>" value="<%= $value %>" id="<%= $input_name %>">
+              <label for="<%= $input_name %>" ><%= $input_name %></label>
           %}
         %}
       %} else {
 
       %}
     % }else { 
-    <input type="text" id="right-label" placeholder="<%= $placeholder %>">
+    <input type="text" name="<%= $name %>" id="right-label" placeholder="<%= $placeholder ? $placeholder : $name %>">
     %}
   </div>
 </div>
