@@ -28,7 +28,7 @@ sub view {
 	my $path = $self->config->{path}->{images};
 	my @images = glob "'${path}/*${id}.*'";
 
-	$product->{image} = "/images/" . basename ( $images[0] );
+	$product->{image} = scalar @images ? "/images/" . basename ( $images[0] ) : "http://placehold.it/350x150";
 
 	$self->render(product => $product );
 }
