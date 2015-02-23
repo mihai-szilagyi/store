@@ -1,0 +1,37 @@
+% layout 'default';
+
+<div>
+  <form>
+    <div class="row">
+      <div class="small-8 columns">
+      <!-- product name  -->
+       <%= include "components/input" , ( name => "name",
+                                        label => "name",
+                                        placeholder => "nume produs",
+                                        value => $product->{name}
+                                        )
+      %>
+      <div class="row">
+      <div class="small-3 columns">
+        <label for="right-label" class="right inline">photo</label>
+      </div>
+        <div class="small-9 columns">
+          <img id="prod_image" src="<%= $product->{image} %>" alt="your image" />
+      </div>
+      </div>
+      <%= include "components/textarea" , ( name => "description",
+                                        label => "descriere",
+                                        placeholder => "descriere produs",
+                                        value => $product->{description}
+                                        )
+      %>
+      <%= include "components/input" , ( name => "price",
+                                        label => "pret",
+                                        placeholder => "pret",
+                                        value => $product->{price}
+                                        )
+      %>
+      </div>
+    </div>
+  </form>
+</div>

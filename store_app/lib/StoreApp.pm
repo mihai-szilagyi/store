@@ -56,6 +56,9 @@ sub startup {
 
     # Normal route to controller
     $r->get('/')->to('catalog-home#home');
+    $r->get('/store')->to('catalog-store#products');
+    $r->get('/store/view')->to('catalog-store#view');
+
     my $cms = $self->routes->under('/cms');
     $cms->get("/product")->to('cms-product#home');
     $cms->post("/product/save")->to('cms-product#save');

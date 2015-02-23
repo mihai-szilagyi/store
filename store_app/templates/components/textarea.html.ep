@@ -1,4 +1,5 @@
 % my $placeholder = stash 'placeholder';
+% my $value = stash 'value';
 <div class="row">
 % if(my $label = stash 'label') {
   <div class="small-3 columns">
@@ -6,6 +7,6 @@
   </div>
 % }
   <div class="small-9 columns">
-  <textarea name="<%= $name %>" placeholder="<%= $placeholder ? $placeholder : $name %>"></textarea>
+  <textarea name="<%= $name %>" placeholder="<%= $placeholder ? $placeholder : $name %>"><%= $value ? $value : '' %></textarea>
   </div>
 </div>

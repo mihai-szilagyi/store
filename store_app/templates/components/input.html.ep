@@ -1,4 +1,5 @@
 % my $placeholder = stash 'placeholder';
+% my $value = stash 'value';
 <div class="row">
 % if(my $label = stash 'label') {
   <div class="small-3 columns">
@@ -11,24 +12,24 @@
       <select name="<%= $name %>">
         % if(my $options = stash 'options'){
           %foreach my $option (@$options) {
-            % my ($input_name, $value) = each %{$option};
-            <option value="<%= $input_name %>"><%= $value %></option>
+            % my ($input_name, $input_value) = each %{$option};
+            <option value="<%= $input_name %>"><%= $input_value %></option>
           %}
         %}
       </select>
       %}elsif($type eq "radio"){
         % if(my $options = stash 'options'){
           %foreach my $option (@$options) {
-            % my ($input_name, $value) = each %{$option};
-            <input type="radio" name="<%= $name %>" value="<%= $value %>" id="<%= $input_name %>">
+            % my ($input_name, $input_value) = each %{$option};
+            <input type="radio" name="<%= $name %>" value="<%= $input_value %>" id="<%= $input_name %>">
               <label for="<%= $input_name %>" ><%= $input_name %></label>
           %}
         %}
         %}elsif($type eq "checkbox"){
         % if(my $options = stash 'options'){
           %foreach my $option (@$options) {
-            % my ($input_name, $value) = each %{$option};
-            <input type="checkbox" name="<%= $name %>" value="<%= $value %>" id="<%= $input_name %>">
+            % my ($input_name, $input_value) = each %{$option};
+            <input type="checkbox" name="<%= $name %>" value="<%= $input_value %>" id="<%= $input_name %>">
               <label for="<%= $input_name %>" ><%= $input_name %></label>
           %}
         %}
@@ -36,7 +37,7 @@
 
       %}
     % }else { 
-    <input required type="text" name="<%= $name %>" id="right-label" placeholder="<%= $placeholder ? $placeholder : $name %>">
+    <input required type="text" name="<%= $name %>" id="right-label" placeholder="<%= $placeholder ? $placeholder : $name %>" <%= $value ? "value=$value" : '' %> >
     %}
   </div>
 </div>

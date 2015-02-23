@@ -5,5 +5,8 @@
     	"password": "root",
     	"host" : "localhost",
     	"dbname" : "store"
+    },
+    "path" : {
+    	"images" : "/data/images"
     }
 }
