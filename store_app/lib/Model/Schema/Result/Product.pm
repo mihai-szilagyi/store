@@ -29,6 +29,12 @@ __PACKAGE__->table("product");
   is_auto_increment: 1
   is_nullable: 0
 
+=head2 name
+
+  data_type: 'varchar'
+  is_nullable: 1
+  size: 450
+
 =head2 description
 
   data_type: 'mediumtext'
@@ -62,6 +68,8 @@ __PACKAGE__->table("product");
 __PACKAGE__->add_columns(
   "id",
   { data_type => "integer", is_auto_increment => 1, is_nullable => 0 },
+  "name",
+  { data_type => "varchar", is_nullable => 1, size => 450 },
   "description",
   { data_type => "mediumtext", is_nullable => 1 },
   "price",
@@ -112,8 +120,8 @@ __PACKAGE__->has_many(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07042 @ 2015-02-21 20:29:50
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:lSDlbTGnFTspjD6Yzs6cFA
+# Created by DBIx::Class::Schema::Loader v0.07042 @ 2015-02-23 11:28:21
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:a3ghAmuK41EkjouJlLEyhw
 
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration
