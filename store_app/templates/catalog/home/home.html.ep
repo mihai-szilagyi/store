@@ -1,30 +1,22 @@
 % layout 'default';
 % title 'Welcome';
 <h2><%= $msg %></h2>
-
+<div class="row large-4 columns">
 <ul class="example-orbit " data-orbit>
-  <li>
-    <img src="/images/1.jpg" alt="slide 1" />
+  %foreach my $slide (@$carousel){
+    <li>
+    <img src="<%= $slide->{image} %>" alt="slide" />
     <div class="orbit-caption">
-      Caption One.
+      <%= $slide->{caption} %>
     </div>
-  </li>
-  <li class="active">
-    <img src="/images/2.jpg" alt="slide 2" />
-    <div class="orbit-caption">
-      Caption Two.
-    </div>
-  </li>
-  <li>
-    <img src="/images/3.jpg" alt="slide 3" />
-    <div class="orbit-caption">
-      Caption Three.
-    </div>
-  </li>
+    </li>
+  %}
+  
 </ul>
 
   <!-- Timer and Play/Pause Button -->
   <div class="orbit-timer">
     <span></span>
     <div class="orbit-progress"></div>
+  </div>
   </div>
