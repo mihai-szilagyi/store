@@ -9,6 +9,7 @@ sub startup {
 
     # Documentation browser under "/perldoc"
     $self->plugin('PODRenderer');
+    $self->plugin('ParamLogger');
     my $config = $self->plugin('JSONConfig');
     
     #Set up the serialization engine (defaults to JSON)
@@ -56,7 +57,8 @@ sub startup {
     # Normal route to controller
     $r->get('/')->to('catalog-home#home');
     my $cms = $self->routes->under('/cms');
-    $cms->get("/product")->to('cms-product#home'); 
+    $cms->get("/product")->to('cms-product#home');
+    $cms->post("/product/save")->to('cms-product#save');
 
 }
 

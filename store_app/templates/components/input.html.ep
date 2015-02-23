@@ -36,7 +36,7 @@
 
       %}
     % }else { 
-    <input type="text" name="<%= $name %>" id="right-label" placeholder="<%= $placeholder ? $placeholder : $name %>">
+    <input required type="text" name="<%= $name %>" id="right-label" placeholder="<%= $placeholder ? $placeholder : $name %>">
     %}
   </div>
 </div>
