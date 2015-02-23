@@ -136,6 +136,21 @@ __PACKAGE__->set_primary_key("id");
 
 =head1 RELATIONS
 
+=head2 carousels
+
+Type: has_many
+
+Related object: L<Model::Schema::Result::Carousel>
+
+=cut
+
+__PACKAGE__->has_many(
+  "carousels",
+  "Model::Schema::Result::Carousel",
+  { "foreign.product" => "self.id" },
+  { cascade_copy => 0, cascade_delete => 0 },
+);
+
 =head2 manufacturer
 
 Type: belongs_to
@@ -192,8 +207,8 @@ __PACKAGE__->belongs_to(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07042 @ 2015-02-23 17:24:56
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:YHBiM4gg10jext1vgOTqWA
+# Created by DBIx::Class::Schema::Loader v0.07042 @ 2015-02-23 18:36:43
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:WXt0BWucG+zIG8t+WN5Rbw
 
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration
