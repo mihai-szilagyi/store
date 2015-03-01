@@ -1,0 +1,45 @@
+ .top-bar-section {
+ 	padding: 0px 0 0 3.625rem;
+ }
+
+i a {
+ 	color: #fff;
+ }
+
+.tab-bar {
+	box-shadow: 0 0 40px 0 rgba(0,0,0,1.9);
+	opacity: 0.8;
+ 	/*background-color:pink;*/
+
+}
+
+.padding-10 {
+	padding: 0 10px;
+}
+/*Code will be much smaller after we implement less*/
+.right {
+	border-left: 1px solid #222;;
+}
+
+
+.border-right-left {
+	border-right: 1px solid #222;
+	border-left: 1px solid #222; 
+}
+.boxed {
+	width: 100%;
+	max-width: 85%;
+	box-shadow:0 0 55px 0 rgba(137, 102, 102, 1);
+	margin: 0 auto;
+}
+.main-section {
+	/*background-image: url(../images/bg.gif);*/
+}
+.footer {
+	height: auto;
+	width: 100%;
+	padding: 20px 0;
+	background-color: #333;
+	text-align: center;
+	margin:5% 0 0 0 ;
+}

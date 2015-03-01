@@ -1,0 +1,19 @@
+<div class="row large-4 columns">
+<ul class="example-orbit " data-orbit>
+  %foreach my $slide (@$carousel){
+    <li>
+    <img src="<%= $slide->{image} %>" alt="slide" />
+    <div class="orbit-caption">
+      <%= $slide->{caption} %>
+    </div>
+    </li>
+  %}
+  
+</ul>
+
+  <!-- Timer and Play/Pause Button -->
+  <div class="orbit-timer">
+    <span></span>
+    <div class="orbit-progress"></div>
+  </div>
+  </div>
