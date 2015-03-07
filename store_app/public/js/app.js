@@ -1,3 +1,4 @@
+var Store = Store || {};
 function readURL(input) {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
@@ -14,6 +15,7 @@ function readURL(input) {
 }
 
 $(document).ready(function(){
+
     $('.sort').on('change', function(){        
         $.post("/store/product_list",{order_by : $("#order_by").val(),
                                       order_type : $("#order_type").val()},

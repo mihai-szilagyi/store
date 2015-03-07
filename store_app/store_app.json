@@ -8,5 +8,8 @@
     },
     "path" : {
     	"images" : "/data/images"
+    },
+    "facebook" : {
+        "app_id" : "623480707786546"
     }
 }
