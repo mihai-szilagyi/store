@@ -1,2 +1,515 @@
 % layout 'default';
-% title 'Welcome';
+
+
+
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="col-md-12">
+
+
+    <div class="carousel slide" id="myCarousel">
+	    <div class="page-header">
+	        <h3>Cele mai recente</h3>
+	        <!-- <p>Cele mai recent adaugate, doar pentru tine.</p> -->
+	    </div>
+        <div class="carousel-inner">
+            <div class="item active">
+                    <ul class="thumbnails">
+                        <li class="col-md-2">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://image.rakuten.co.jp/o-kura/cabinet/funabashi140/a119761_2.jpg" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Detalii</a>
+                            </div>
+                        </li>
+                        <li class="col-md-2">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://www.creativecraftcorner.com/.a/6a01348612a2c1970c01538f2e7a3a970b-320wi" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Detalii</a>
+                            </div>
+                        </li>
+                        <li class="col-md-2">
+                            <div class="thumbnail">
+                                <a href="#"><img src="https://create-cdn.net/siteimages/24/5/2/245204/5509263.jpg" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Detalii</a>
+                            </div>
+                        </li>
+                        <li class="col-md-2">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://yscmama.typepad.com/photos/done/crochetpursesmall.JPG" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Detalii</a>
+                            </div>
+                        </li>
+                        <li class="col-md-2">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://4.bp.blogspot.com/_EsvfjzBJo5g/S78rFecFUNI/AAAAAAAAADE/EzthvFW1TFs/s320/beads+coin+purse+black+and+white+diamond.jpg" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Detalii</a>
+                            </div>
+                        </li>
+                        <li class="col-md-2">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://image.rakuten.co.jp/o-kura/cabinet/funabashi123/a117884_2.jpg" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Detalii</a>
+                            </div>
+                        </li>
+                    </ul>
+              </div><!-- /Slide1 --> 
+            <div class="item">
+                    <ul class="thumbnails">
+                        <li class="col-md-2">
+                            <div class="thumbnail">
+                                <a href="#"><img src="https://www.imh.com.sg/uploadedfiles/apps/eShop/Image/fat%20crochet%20purse_634853940285061074.JPG" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                            </div>
+                        </li>
+                        <li class="col-md-2">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://ecx.images-amazon.com/images/I/41Dg%2BfKknmL.jpg" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                            </div>
+                        </li>
+                        <li class="col-md-2">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://kraftykylie.typepad.com/.a/6a00e5506443f68833011570392094970c-320wi" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                            </div>
+                        </li>
+                        <li class="col-md-2">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://image.rakuten.co.jp/o-kura/cabinet/funabashi145/a2094928_2.jpg" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                            </div>
+                        </li>
+                        <li class="col-md-2">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://3.bp.blogspot.com/-9m7rndIh4FQ/TsUoL_Y1iSI/AAAAAAAALFo/4MhjexyUbQ0/s320/latest+hand+bags+purse+clutch+fashion+styles+ladies+wedding+%252822%2529.jpg" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                            </div>
+                        </li>
+                        <li class="col-md-2">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://media.tumblr.com/tumblr_lpzpcnWrYt1qdx48z.jpg" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                            </div>
+                        </li>
+                    </ul>
+              </div><!-- /Slide2 --> 
+            <div class="item">
+                    <ul class="thumbnails">
+                        <li class="col-md-2">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                            </div>
+                        </li>
+                        <li class="col-md-2">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                            </div>
+                        </li>
+                        <li class="col-md-2">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                            </div>
+                        </li>
+                        <li class="col-md-2">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                            </div>
+                        </li>
+                        <li class="col-md-2">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                            </div>
+                        </li>
+                        <li class="col-md-2">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                            </div>
+                        </li>
+                    </ul>
+              </div><!-- /Slide3 --> 
+        </div>
+        
+        <div class="control-box">                            
+            <a data-slide="prev" href="#myCarousel" class="carousel-control left">‹</a>
+            <a data-slide="next" href="#myCarousel" class="carousel-control right">›</a>
+        </div><!-- /.control-box -->   
+                              
+    </div><!-- /#myCarousel -->
+
+
+<div class="carousel slide" id="myCarousel2">
+	    <div class="page-header">
+	        <h3>Top Vanzari</h3>
+	    </div>
+        <div class="carousel-inner">
+            <div class="item active">
+                    <ul class="thumbnails">
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="https://d2gg9evh47fn9z.cloudfront.net/thumb_COLOURBOX3761577.jpg" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Detalii</a>
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://3.bp.blogspot.com/-2gNh17T23H0/UVwtc-icNFI/AAAAAAAAED8/4CmYoEbLVNA/s320/2012-08-18+13.39.00.jpg" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Detalii</a>
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://www.creativecraftcorner.com/.a/6a01348612a2c1970c0147e35979d6970b-320wi" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Detalii</a>
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://media.sewingdaisies.com.au/wp-content/uploads/2010/08/657_12Image.jpg" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Detalii</a>
+                            </div>
+                        </li>
+                    </ul>
+              </div><!-- /Slide1 --> 
+            <div class="item">
+                    <ul class="thumbnails">
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Detalii</a>
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Detalii</a>
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Detalii</a>
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Detalii</a>
+                            </div>
+                        </li>
+                    </ul>
+              </div><!-- /Slide2 --> 
+            <div class="item">
+                    <ul class="thumbnails">
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Detalii</a>
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Detalii</a>
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Detalii</a>
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Detalii</a>
+                            </div>
+                        </li>
+                    </ul>
+              </div><!-- /Slide3 --> 
+        </div>
+        
+        <div class="control-box">                            
+            <a data-slide="prev" href="#myCarousel2" class="carousel-control left">‹</a>
+            <a data-slide="next" href="#myCarousel2" class="carousel-control right">›</a>
+        </div><!-- /.control-box -->   
+                              
+    </div><!-- /#myCarousel2 -->
+
+
+<div class="carousel slide" id="myCarousel3">
+	    <div class="page-header">
+	        <h3>Lichidări de stoc</h3>
+	        <!-- <p>Cele mai recent adaugate, doar pentru tine.</p> -->
+	    </div>
+        <div class="carousel-inner">
+            <div class="item active">
+                    <ul class="thumbnails">
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://ancientpoint.com/imgs/a/a/o/o/f/antique_victorian_edwardian_art_nouveau_floral_poppy_g_silver_coin_card_purse_1_thumb2_lgw.jpg" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Detalii</a>
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="https://s-media-cache-ak0.pinimg.com/474x/5c/ef/99/5cef99dc4bccb2025a0857ef102996e8.jpg" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Detalii</a>
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://decoart.com/andyskinner/wp-content/uploads/2013/10/P1090994.jpg" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Detalii</a>
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://img0104.popscreencdn.com/158933333_designer-studded-faux-leather-small-dog-purse-carrier-.jpg" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Detalii</a>
+                            </div>
+                        </li>
+                    </ul>
+              </div><!-- /Slide1 --> 
+            <div class="item">
+                    <ul class="thumbnails">
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                            </div>
+                        </li>
+                    </ul>
+              </div><!-- /Slide2 --> 
+            <div class="item">
+                    <ul class="thumbnails">
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                            </div>
+                            <div class="caption">
+                                <h4>Praesent commodo</h4>
+                				<p>Nullam Condimentum Nibh Etiam Sem</p>
+                                <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                            </div>
+                        </li>
+                    </ul>
+              </div><!-- /Slide3 --> 
+        </div>
+        
+        <div class="control-box">                            
+            <a data-slide="prev" href="#myCarousel3" class="carousel-control left">‹</a>
+            <a data-slide="next" href="#myCarousel3" class="carousel-control right">›</a>
+        </div><!-- /.control-box -->   
+                              
+    </div><!-- /#myCarousel -->
+
+</div><!-- /.span12 -->          
+</div><!-- /.row --> 
+</div><!-- /.container -->
+

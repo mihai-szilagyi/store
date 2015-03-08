@@ -1,87 +1,138 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Store</title>
-    <link rel="stylesheet" href="/css/foundation.css" />
-    <link rel="stylesheet" href="/css/app.css" />
-    <link rel="stylesheet" href="/fonts/font-awesome-4.3.0/css/font-awesome.min.css">
-    <script src="/js/vendor/modernizr.js"></script>
-  </head>
-  <body>
-  <script type="text/javascript">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="owl-carousel/owl.carousel.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    
+
+    
+    <script src="slider/jquery.flexslider-min.js"></script>
+
+    <script src="/js/app.js"></script>
+      <script type="text/javascript">
   var Store = new Object();
   Store.app_id = "<%= $self->config->{facebook}->{app_id} %>"
   </script>
-  <div class="off-canvas-wrap boxed" data-offcanvas>
-      <div class="inner-wrap">
-        <nav class="tab-bar top-bar" data-topbar role="navigation">
-          <section class="left-small">
-            <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-          </section>
+  </head>
+  <body class="col-md-10 center-shadow">
 
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
 
-          <section class="top-bar-section">
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" id="logo" src="images/green-corner-store.png">
+      </a>
+      <!-- <a class="navbar-brand" href="#"><img id="logo"src="images/green-corner-store.png"</a> -->
+    </div>
 
-
-        <ul class="left">
-          <li>
-            <a  href="https://www.canadianopendataexperience.ca/"><img alt="logo" src="http://www.logoease.com/wp-content/themes/halfcreative/images/logo_footer.png"></a>
-          </li>
-
-          <li><i class="fa fa-home"><a href="#">Acasă</a></i></li>
-          <li><i class="fa fa-th-list"><a href="#">Categorii</a></i></li>
-          <li><i class="fa fa-info"><a href="#">Despre noi</a></i></li>
-        </ul>
-
-        <ul class="right">
-          <!-- <li><i class="fa fa-user-plus"><a href="#">Logare</a></i></li> -->
-
-          <li class="padding-10 sign_in">
-            <a class="button radius expand " id="sign_in" href="#">Logare</a>
-            </li>
-          <li class="padding-10 border-right-left"><i class="fa fa-shopping-cart"><a href="#">Cos</a></i></li>
-          <li class="sign_out"><a href="#" id="sign_out"><i class="fa fa-sign-out"></i></a></li>
-        </ul>        
-        <!-- <h1 class="title">Store</h1> -->
-          </section>
-
-<!--           <section class="right-small">
-            <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
-          </section> -->
-        </nav>
-
-    <aside class="left-off-canvas-menu">
-      <ul class="off-canvas-list">
-        <li><label>Store Menu</label></li>
-          <li><a href="#"><i class="fa fa-home"> Acasă</i></a></li>
-          <li><a href="#"><i class="fa fa-th-list"> Categorii</i></a></li>
-          <li><a href="#"><i class="fa fa-info"> Despre noi</i></a></li>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><i class="fa fa-home"></i> Acasă<span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-bars"></i> Categorii <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Genți Piele Naturală</a></li>
+            <li><a href="#">Genți Piele Sintetică</a></li>
+            <li><a href="#">Rucsaci Bărbați</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Oferte Promoționale</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Lichidare Stoc</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="fa fa-info"></i> Despre noi</a></li>
+        
       </ul>
-    </aside>
 
-<!--     <aside class="right-off-canvas-menu">
-      <ul class="off-canvas-list">
-        <li><label>Users</label></li>
-        <li><a href="#">Hari Seldon</a></li>
-        <li><a href="#">...</a></li>
+      <ul class="nav navbar-nav navbar-right">
+        <form class="navbar-form navbar-left" role="search">
+        <i class="fa fa-search"></i>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Căutati Produse">
+          </div>
+          <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+        </form>      
+        <li><a href="#"><i class="fa fa-shopping-cart"></i>  Coș este gol</a></li>
+
       </ul>
-    </aside> -->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <section class="main-section">
       <%= content %>
     </section>
       %= include "components/footer"
-      </div>
-    </div>
+
+
     <script src="/js/vendor/jquery.js"></script>
-    <script src="/js/foundation.min.js"></script>
-    <script src="/js/foundation/foundation.orbit.js"></script>
-    <script type="text/javascript">
-      $(document).foundation();
-    </script>
-    <script src="/js/facebook.js"></script>
     <script src="/js/app.js"></script>
   </body>
 </html>

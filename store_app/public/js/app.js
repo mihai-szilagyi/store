@@ -23,4 +23,21 @@ $(document).ready(function(){
                                     $("#catalog").html(data);
                                 });
     });
+
+
+
+
 });
+
+
+
+
+$(document).ready(function() {
+ 
+  $("#owl-example").owlCarousel();
+ 
+ $('.carousel').carousel({
+  interval: 6000
+})
+});
+

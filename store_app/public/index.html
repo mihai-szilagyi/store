@@ -5,157 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation | Welcome</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-      	<div class="panel">
-	        <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-	        <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-	        <p>Once you've exhausted the fun in this document, you should check out:</p>
-	        <div class="row">
-	        	<div class="large-4 medium-4 columns">
-	    		<p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-	    	</div>
-	        	<div class="large-4 medium-4 columns">
-	        		<p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-	        	</div>
-	        	<div class="large-4 medium-4 columns">
-	        		<p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-	        	</div>        
-					</div>
-      	</div>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
+    <div class="off-canvas-wrap boxed" data-offcanvas>
+      <div class="inner-wrap">
+        <nav class="tab-bar top-bar" data-topbar role="navigation">
+          <section class="left-small">
+            <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+          </section>
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-12.columns" />
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-4 medium-4 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-4.columns" />
-				    </div>
-				    <div class="large-4 medium-4 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-4.columns" />
-				    </div>
-				    <div class="large-4 medium-4 columns">
-				      <div class="row collapse">
-				        <label>Input Label</label>
-				        <div class="small-9 columns">
-				          <input type="text" placeholder="small-9.columns" />
-				        </div>
-				        <div class="small-3 columns">
-				          <span class="postfix">.com</span>
-				        </div>
-				      </div>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Select Box</label>
-				      <select>
-				        <option value="husker">Husker</option>
-				        <option value="starbuck">Starbuck</option>
-				        <option value="hotdog">Hot Dog</option>
-				        <option value="apollo">Apollo</option>
-				      </select>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-6 medium-6 columns">
-				      <label>Choose Your Favorite</label>
-				      <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-				      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-				    </div>
-				    <div class="large-6 medium-6 columns">
-				      <label>Check these out</label>
-				      <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-				      <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Textarea Label</label>
-				      <textarea placeholder="small-12.columns"></textarea>
-				    </div>
-				  </div>
-				</form>
-      </div>     
 
-      <div class="large-4 medium-4 columns">
-			  <h5>Try one of these buttons:</h5>
-			  <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-				<div class="panel">
-        	<h5>So many components, girl!</h5>
-        	<p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-        	<a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
+          <section class="top-bar-section">
+
+
+        <ul class="left">
+          <li>
+            <a  href="https://www.canadianopendataexperience.ca/"><img alt="logo" src="http://www.logoease.com/wp-content/themes/halfcreative/images/logo_footer.png"></a>
+          </li>
+
+          <li><i class="fa fa-home"><a href="#">Acasă</a></i></li>
+          <li><i class="fa fa-th-list"><a href="#">Categorii</a></i></li>
+          <li><i class="fa fa-info"><a href="#">Despre noi</a></i></li>
+        </ul>
+
+        <ul class="right">
+          <!-- <li><i class="fa fa-user-plus"><a href="#">Logare</a></i></li> -->
+
+          <li class="padding-10"><a class="button radius expand " href="#">Logare</a></li>
+          <li class="padding-10 border-right-left"><i class="fa fa-shopping-cart"><a href="#">Cos</a></i></li>
+          <li><a href="#"><i class="fa fa-sign-out"></i></a></li>
+        </ul>        
+        <!-- <h1 class="title">Store</h1> -->
+          </section>
+
+<!--           <section class="right-small">
+            <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
+          </section> -->
+        </nav>
+
+    <aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Store Menu</label></li>
+          <li><a href="#"><i class="fa fa-home"> Acasă</i></a></li>
+          <li><a href="#"><i class="fa fa-th-list"> Categorii</i></a></li>
+          <li><a href="#"><i class="fa fa-info"> Despre noi</i></a></li>
+      </ul>
+    </aside>
+
+<!--     <aside class="right-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Users</label></li>
+        <li><a href="#">Hari Seldon</a></li>
+        <li><a href="#">...</a></li>
+      </ul>
+    </aside> -->
+
+    <section class="main-section">
+
+      <div class="row">
+        <div class="large-12 columns">
+          <h1>Welcome to Store</h1>
         </div>
       </div>
+      <div class="row">
+        <div class="large-12 columns">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula aliquam consectetur. Sed iaculis augue aliquet est facilisis pretium. Morbi auctor, leo a pulvinar pulvinar, turpis nulla sollicitudin metus, in feugiat purus massa ac ligula. Aenean blandit nulla eu bibendum suscipit. Aliquam erat volutpat. Cras porta semper fringilla. Vestibulum eget mauris non felis laoreet tristique. Ut eleifend enim metus, pharetra efficitur sapien maximus id. Praesent quis mi quis arcu fermentum pellentesque vitae id odio. Donec lorem ligula, fringilla eget aliquam et, tincidunt quis nisl. Pellentesque a elementum tellus, non semper nunc. Etiam sit amet libero tincidunt, elementum nunc hendrerit, porta neque. Aliquam erat volutpat.
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula aliquam consectetur. Sed iaculis augue aliquet est facilisis pretium. Morbi auctor, leo a pulvinar pulvinar, turpis nulla sollicitudin metus, in feugiat purus massa ac ligula. Aenean blandit nulla eu bibendum suscipit. Aliquam erat volutpat. Cras porta semper fringilla. Vestibulum eget mauris non felis laoreet tristique. Ut eleifend enim metus, pharetra efficitur sapien maximus id. Praesent quis mi quis arcu fermentum pellentesque vitae id odio. Donec lorem ligula, fringilla eget aliquam et, tincidunt quis nisl. Pellentesque a elementum tellus, non semper nunc. Etiam sit amet libero tincidunt, elementum nunc hendrerit, porta neque. Aliquam erat volutpat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula aliquam consectetur. Sed iaculis augue aliquet est facilisis pretium. Morbi auctor, leo a pulvinar pulvinar, turpis nulla sollicitudin metus, in feugiat purus massa ac ligula. Aenean blandit nulla eu bibendum suscipit. Aliquam erat volutpat. Cras porta semper fringilla. Vestibulum eget mauris non felis laoreet tristique. Ut eleifend enim metus, pharetra efficitur sapien maximus id. Praesent quis mi quis arcu fermentum pellentesque vitae id odio. Donec lorem ligula, fringilla eget aliquam et, tincidunt quis nisl. Pellentesque a elementum tellus, non semper nunc. Etiam sit amet libero tincidunt, elementum nunc hendrerit, porta neque. Aliquam erat volutpat.
+
+Maecenas imperdiet enim eu ultricies iaculis. Morbi faucibus orci iaculis eros faucibus suscipit. Aliquam ac ligula risus. Duis nec mauris vel diam facilisis mattis sit amet quis elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec cursus porta interdum. Pellentesque imperdiet tincidunt elit, a dignissim lectus aliquam sit amet. Vestibulum volutpat felis diam, ac egestas mauris feugiat nec. Aenean elementum, dolor nec ullamcorper sagittis, sapien elit viverra dui, at hendrerit mauris nibh vitae risus. Proin rutrum dolor vel ex scelerisque sodales vitae non metus. Nulla scelerisque eros nec ultricies tempus.
+
+Cras sed purus posuere, vulputate tortor sit amet, sollicitudin enim. Etiam non gravida quam. Vestibulum quis feugiat ante, quis pretium ipsum. Mauris porta id neque non efficitur. Maecenas vulputate sodales sollicitudin. Suspendisse tristique congue egestas. Mauris egestas blandit nulla eget dapibus. Morbi luctus vel arcu nec lacinia. Pellentesque eleifend finibus justo, ac convallis nulla aliquet sit amet. Vestibulum est lectus, dignissim vestibulum elementum id, eleifend id libero. Proin risus libero, tincidunt eget commodo id, accumsan quis massa. Morbi eget elementum purus. Pellentesque non mauris congue, fermentum ipsum ut, tincidunt elit. Cras posuere pharetra metus et rhoncus.
+
+In eu tortor luctus, vestibulum neque luctus, molestie elit. Maecenas ornare eu turpis eleifend tempor. Aliquam at lacus accumsan, mollis risus vel, elementum nibh. Mauris ut eros augue. Maecenas elementum mattis ex, vehicula viverra turpis dapibus vel. Fusce eget nulla vel diam tincidunt cursus ut sed ipsum. Sed varius laoreet tellus viverra sagittis. Mauris ac aliquam massa. Quisque commodo ipsum nec faucibus viverra. In varius est ac ipsum varius feugiat in at sem. Etiam eu sollicitudin ante. Donec eu erat eros. Fusce nec purus non lectus mollis accumsan. Aliquam rutrum hendrerit auctor. Proin dapibus augue et nunc imperdiet condimentum. Nunc dapibus condimentum turpis, in auctor ligula consectetur suscipit.
+
+Nam sed iaculis nulla. In a ipsum sapien. Sed sed sagittis enim. Aenean a nisi lectus. Praesent sagittis, mauris tempus dapibus interdum, nisl risus tincidunt felis, ut fringilla leo nibh ut nibh. Aliquam in turpis ut ante consectetur cursus. Pellentesque dapibus pulvinar nisi. Quisque efficitur efficitur metus ac posuere. Phasellus enim diam, sollicitudin quis pharetra at, egestas sit amet lectus. Maecenas vel massa facilisis, viverra augue auctor, lacinia urna. Vivamus nulla lorem, pretium vitae lorem vel, gravida iaculis lorem. Aenean non laoreet justo. Nam sed arcu non turpis venenatis aliquet. In metus felis, cursus at tortor non, pellentesque molestie justo. Nam convallis et mauris id euismod.
+
+
+        </div>
+
+      </div>
+    </section>
+
+  <footer class="footer">
+    <div>
+      <img alt="logo" src="http://www.logoease.com/wp-content/themes/halfcreative/images/logo_footer.png">
     </div>
+  </footer>
+
+  <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
+
+
+
+
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
