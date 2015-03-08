@@ -53,7 +53,7 @@ sub startup {
     WWW::Session->default_expiration_time(3600);
     # Router
     my $r = $self->routes;
-    # $r->->bridge->to('authentication#check');
+    # $r->bridge->to('authentication#check');
     # Normal route to controller
     $r->get('/')->to('catalog-home#home');
     $r->get('/store')->to('catalog-store#products');
@@ -64,6 +64,8 @@ sub startup {
     $r->post('/login')->to('catalog-authentication#login');
     $r->post('/logout')->to('catalog-authentication#logout');
 
+    my $user = $self->routes->under('/user');
+   
     my $cms = $self->routes->under('/cms');
     $cms->get("/product")->to('cms-product#home');
     $cms->get("/product/new")->to('cms-product#edit');
